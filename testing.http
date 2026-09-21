@@ -26,4 +26,26 @@ Content-Type: application/json
 }
 
 ### deleteing from record Stud
-DELETE http://localhost:4004/odata/v4/student-apiservice/StudentSet('e938c031-396e-457d-a29f-ca0099418f5a')
+DELETE http://localhost:4004/odata/v4/student-apiservice/StudentSet('e938c031-396e-457d-a29f-ca0099418f5a');
+
+
+###Composition example
+POST http://localhost:4004/odata/v4/student-apiservice/Authors
+Content-Type: application/json
+
+{
+      "name": "Suresh WADIKAR",
+      "books": [
+            {
+              "name": "SAP Learn",
+              "title": "BTP CAPM",
+              "PubDate": "10-10-2020"
+            },
+              {
+              "name": "SAP Learn2",
+              "title": "BTP CAPM2",
+              "PubDate":  "11-11-2020"
+            }
+            ]   
+
+}

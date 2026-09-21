@@ -14,7 +14,7 @@ entity Students : cuid {
     mobile  : String;
     age     : Integer;
     gender  : String;
-
+    //courses : Composition of many Course
 }
 
 entity Courses : cuid, managed {
@@ -24,11 +24,16 @@ entity Courses : cuid, managed {
     duration : Integer;
 }
 
-entity address {
-    key addressID   : integer;
-        description : String;
-        city        : String;
-        country     : String;
-        pincode     : integer;
+entity Books : cuid {
+    name     : String;
+    title    : String;
+    PubDate  : String;
+    authorID : String;
+    author   : Association to Authors; //managed association
+}
 
+entity Authors : cuid {
+    name  : String;
+    books : Composition of many Books
+                on books.author = $self;
 }
