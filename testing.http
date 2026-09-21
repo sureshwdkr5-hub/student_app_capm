@@ -1,0 +1,29 @@
+### Reading Data fro Student table
+GET http://localhost:4004/odata/v4/student-apiservice/StudentSet
+
+### creating record in stud table
+POST http://localhost:4004/odata/v4/student-apiservice/StudentSet
+Content-Type: application/json
+
+{
+      "studID": "123455",
+      "name": "Suresh1",
+      "address": "Dhayari",
+      "email": "suresh.jones@example.com",
+      "mobile": "+98032423",
+      "age": 20,
+      "gender": "Male"
+}
+
+### update record from stud table
+
+PATCH http://localhost:4004/odata/v4/student-apiservice/StudentSet('e938c031-396e-457d-a29f-ca0099418f5a')
+Content-Type: application/json
+
+{     "name": "Suresh WADIKAR",
+      "email": "sureshwdkr5@gmail.com",
+      "age": "38"
+}
+
+### deleteing from record Stud
+DELETE http://localhost:4004/odata/v4/student-apiservice/StudentSet('e938c031-396e-457d-a29f-ca0099418f5a')

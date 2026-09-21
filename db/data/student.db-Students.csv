@@ -1,0 +1,5 @@
+ID,name,address,email,mobile,age,gender
+4a8b7c9d-1234-5678-90ab-cdef12345678,John Doe,123 Main St New York,john.doe@example.com,+15550199,21,Male
+5f9e8d7c-2345-6789-01bc-defa23456789,Jane Smith,456 Oak Ave Los Angeles,jane.smith@example.com,+15550288,22,Female
+6a7b8c9d-3456-7890-12cd-efab34567890,Alex Jones,789 Pine Rd Chicago,alex.jones@example.com,+15550377,20,Non-binary
+
